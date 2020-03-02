@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>snaker-core</module>
+        <module>snaker-spring</module>
+        <module>snaker-ehcache</module>
+        <module>snaker-quartz</module>
+        <module>snaker-mybatis</module>
+        <module>snaker-hibernate</module>
+        <module>snaker-web</module>
+
+    </modules>
+    <groupId>com.github.snakerflow</groupId>
+    <artifactId>snaker</artifactId>
+    <version>2.5.1</version>
+    <packaging>pom</packaging>
+    <name>snaker</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+
+        <snaker.version>2.5.1</snaker.version>
+        <jackson.verion>2.9.8</jackson.verion>
+        <jackson.mapper.version>1.9.13</jackson.mapper.version>
+
+        <shiro.version>1.4.0</shiro.version>
+        <slf4j.version>1.7.2</slf4j.version>
+        <java.version>1.8</java.version>
+
+        <fastjson.version>1.2.51</fastjson.version>
+        <redisson.version>3.10.4</redisson.version>
+        <lombok.version>1.18.8</lombok.version>
+        <framework.version>1.0.0</framework.version>
+        <!--        <servlet.version>2.5</servlet.version>-->
+        <servlet.version>4.0.1</servlet.version>
+        <spring.version>5.2.2.RELEASE</spring.version>
+        <spring.boot.version>2.1.8.RELEASE</spring.boot.version>
+
+        <hibernate.version>5.2.10.Final</hibernate.version>
+        <hibernate.validator.version>5.4.0.Final</hibernate.validator.version>
+
+        <mybatis.version>3.4.6</mybatis.version>
+        <mybatis.spring.version>2.0.3</mybatis.spring.version>
+        <tkmybatis.version>4.1.5</tkmybatis.version>
+
+        <grpc.version>1.4.0</grpc.version>
+        <spring.cloud.version>Greenwich.SR3</spring.cloud.version>
+        <spring.cloud.openfeign.version>2.1.3.RELEASE</spring.cloud.openfeign.version>
+        <spring.cloud.consul.version>2.1.3.RELEASE</spring.cloud.consul.version>
+        <mybatis-spring-boot-starter.version>1.3.2</mybatis-spring-boot-starter.version>
+        <druid-spring-boot-starter.version>1.1.9</druid-spring-boot-starter.version>
+        <mapper-spring-boot-starter.version>1.2.4</mapper-spring-boot-starter.version>
+        <pagehelper-spring-boot-starter.version>1.2.3</pagehelper-spring-boot-starter.version>
+
+    </properties>
+
+    <build>
+        <plugins>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-compiler-plugin</artifactId>-->
+<!--                <version>3.1</version>-->
+<!--                <configuration>-->
+<!--                    <source>1.8</source>-->
+<!--                    <target>1.8</target>-->
+<!--                    <showWarnings>true</showWarnings>-->
+<!--                </configuration>-->
+<!--            </plugin>              -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
